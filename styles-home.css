@@ -3,35 +3,41 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Afacad Flux";
+    color: #627e4a;
+
 }
 
 body {
-    background-color: #f5f5f5;
-    color: #333;
+    background-image: url('gradient-final.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     line-height: 1.6;
+    margin-top: 0px;
 }
 
 .container {
+    padding-top:0px;
     max-width: 850px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
 }
 
 h1 {
-    color: #2c3e50;
+    color: #627e4a;
     text-align: center;
     margin-bottom: 20px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #3498db;
+    text-align: left;
 }
 
 h2 {
-    color: #3498db;
-    margin-bottom: 15px;
+    color: #627e4a;
+
 }
 
 .description {
@@ -42,11 +48,10 @@ h2 {
 
 /* Form Styles */
 .section {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     padding: 15px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    border-left: 4px solid #3498db;
+    border-radius: 30px;
+    border: 2px solid #627e4a;
 }
 
 .input-group {
@@ -62,9 +67,10 @@ label {
 input[type="number"] {
     width: 100%;
     padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    border: 1px solid #627e4a;
+    border-radius: 25px;
     font-size: 16px;
+    background-color: transparent;
 }
 
 /* Attendance Checkboxes */
@@ -117,40 +123,50 @@ input[type="number"] {
 
 .btn {
     display: inline-block;
-    background-color: #3498db;
-    color: white;
+    background-color: #ee7225;
+    color: #f1e49b;
     padding: 10px 20px;
     text-decoration: none;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
     font-size: 16px;
     text-align: center;
-    transition: background-color 0.3s;
     min-width: 150px;
 }
 
 .btn:hover {
-    background-color: #2980b9;
+    background-color: #cb6322;
+}
+
+#back-button{
+    background-color: transparent;
+    color: #627e4a;
+    border: 1.5px solid #627e4a;
 }
 
 /* Results Section */
 .results-container {
     margin-top: 30px;
     padding: 20px;
-    background-color: #f0f8ff;
-    border-radius: 5px;
+    border-radius: 30px;
     display: none;
+    color: #f1e49b;
+    width: 800px;
+}
+
+.results-container h2{
+    font-size: 32px;
 }
 
 .formula-display {
     margin-bottom: 20px;
     font-family: monospace;
     white-space: pre-wrap;
-    padding: 15px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    padding: 10px;
+    background-color: #184025;
+    color: #f1e49b;
+    border-radius: 30px;
     line-height: 1.8;
 }
 
@@ -158,18 +174,21 @@ input[type="number"] {
     text-align: center;
     margin-top: 20px;
     padding: 15px;
-    background-color: #2c3e50;
-    color: white;
-    border-radius: 5px;
+    background-color: #ee7225;
+    color: #f1e49b;
+    border-radius: 30px;
 }
 
+#finalGrade{
+    color:#f1e49b;
+}
 .final-grade h3 {
-    color: white;
+    color: #f1e49b;
 }
 
 /* Error messages */
 .error {
-    color: #e74c3c;
+    color: #d03725;
     font-size: 14px;
     margin-top: 5px;
     display: block;
@@ -195,3 +214,4 @@ input[type="number"] {
         grid-template-columns: 1fr;
     }
 }
+

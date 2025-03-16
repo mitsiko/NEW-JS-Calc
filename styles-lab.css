@@ -1,0 +1,250 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Afacad Flux";
+    color: #627e4a;
+
+}
+
+body {
+    background-image: url('gradient-final.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    line-height: 1.6;
+    margin-top: 0px;
+}
+
+.container {
+    padding-top:0px;
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    
+}
+
+h1 {
+    color: #627e4a;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+h2 {
+    color: #627e4a;
+
+}
+
+.description {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+/* Form Styles */
+.section {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 30px;
+    border: 1.5px solid #627e4a;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #627e4a;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+/* Attendance Checkboxes */
+.attendance-checkboxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.checkbox-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Radio Buttons */
+.radio-group {
+    margin-top: 10px;
+}
+
+.radio-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.radio-item input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Buttons */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ee7225;
+    color: #f1e49b;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    min-width: 150px;
+}
+
+.btn:hover {
+    background-color: #cb6322;
+}
+
+#back-button{
+    background-color: transparent;
+    color: #627e4a;
+    border: 2px solid #627e4a;
+}
+
+/* Results Section */
+.results-container {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 30px;
+    display: none;
+    color: #f1e49b;
+    width: 800px;
+}
+
+.results-container h2{
+    font-size: 32px;
+}
+
+.formula-display {
+    margin-bottom: 20px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    padding: 10px;
+    background-color: #184025;
+    color: #f1e49b;
+    border-radius: 30px;
+    line-height: 1.8;
+}
+
+.final-grade {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ee7225;
+    color: #f1e49b;
+    border-radius: 30px;
+}
+
+#finalGrade{
+    color:#f1e49b;
+}
+.final-grade h3 {
+    color: #f1e49b;
+}
+
+/* Error messages */
+.error {
+    color: #d03725;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        margin: 10px;
+    }
+    
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+    
+    .attendance-checkboxes {
+        grid-template-columns: 1fr;
+    }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 4px; /* For checkboxes */
+  /*border-radius: 50%; /* For radio buttons */
+  border: 1px solid #627e4a;
+  outline: none;
+  cursor: pointer;
+  background-color: none;
+}
+
+input[type="radio"]{
+    border-radius: 50%;
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+  background-color: #ee7225;
+  border-color: #ee7225;
+}
+
+input[type="checkbox"]:checked::before {
+    content: '\2713';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Match the checkbox's width */
+    height: 100%; /* Match the checkbox's height */
+    color: #f1e49b; /* Or any color you prefer */
+    font-size: 1em; /* Adjust the checkmark size */
+}
