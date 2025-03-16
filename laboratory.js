@@ -138,39 +138,39 @@ document.addEventListener('DOMContentLoaded', function() {
         prelimClassStanding, prelimGrade
     ) {
         return `
-    <strong>Attendance Calculation:</strong>
-    Number of Absences = Total Dates - Checked Dates = ${totalDates} - ${checkedDates} = ${numAbsences}
-    Attendance = 100% - (10% × Number of Absences) = 100% - (10% × ${numAbsences}) = ${attendancePercentage.toFixed(2)}%
+<strong>Attendance Calculation:</strong>
+Number of Absences = Total Dates - Checked Dates = ${totalDates} - ${checkedDates} = ${numAbsences}
+Attendance = 100% - (10% × Number of Absences) = 100% - (10% × ${numAbsences}) = ${attendancePercentage.toFixed(2)}%
 
-    <strong>Lab Work Calculation:</strong>
-    Machine Problem 1 = ${mp1Value}%
-    Machine Problem 2 = ${mp2Value}%
-    Machine Problem 3 = ${mp3Value}%
-    Documentation = ${docValue}%
-    Lab Work = (Machine Problem 1 + Machine Problem 2 + Machine Problem 3 + Documentation) ÷ 4
-             = (${mp1Value}% + ${mp2Value}% + ${mp3Value}% + ${docValue}%) ÷ 4
-             = ${labWork.toFixed(2)}%
+<strong>Lab Work Calculation:</strong>
+Machine Problem 1 = ${mp1Value}%
+Machine Problem 2 = ${mp2Value}%
+Machine Problem 3 = ${mp3Value}%
+Documentation = ${docValue}%
+Lab Work = (Machine Problem 1 + Machine Problem 2 + Machine Problem 3 + Documentation) ÷ 4
+            = (${mp1Value}% + ${mp2Value}% + ${mp3Value}% + ${docValue}%) ÷ 4
+            = ${labWork.toFixed(2)}%
 
-    <strong>Prelim Exam Calculation:</strong>
-    Java Exam 1 (20%) = ${javaExam1Value}% × 0.2 = ${(javaExam1Value * 0.2).toFixed(2)}%
-    Java Exam 2 (30%) = ${javaExam2Value}% × 0.3 = ${(javaExam2Value * 0.3).toFixed(2)}%
-    JS Exam 1 (20%) = ${jsExam1Value}% × 0.2 = ${(jsExam1Value * 0.2).toFixed(2)}%
-    JS Exam 2 (30%) = ${jsExam2Value}% × 0.3 = ${(jsExam2Value * 0.3).toFixed(2)}%
-    Prelim Exam = (20% × Java Exam 1) + (30% × Java Exam 2) + (20% × JS Exam 1) + (30% × JS Exam 2)
-                = ${(javaExam1Value * 0.2).toFixed(2)}% + ${(javaExam2Value * 0.3).toFixed(2)}% + ${(jsExam1Value * 0.2).toFixed(2)}% + ${(jsExam2Value * 0.3).toFixed(2)}%
-                = ${prelimExam.toFixed(2)}%
+<strong>Prelim Exam Calculation:</strong>
+Java Exam 1 (20%) = ${javaExam1Value}% × 0.2 = ${(javaExam1Value * 0.2).toFixed(2)}%
+Java Exam 2 (30%) = ${javaExam2Value}% × 0.3 = ${(javaExam2Value * 0.3).toFixed(2)}%
+JS Exam 1 (20%) = ${jsExam1Value}% × 0.2 = ${(jsExam1Value * 0.2).toFixed(2)}%
+JS Exam 2 (30%) = ${jsExam2Value}% × 0.3 = ${(jsExam2Value * 0.3).toFixed(2)}%
+Prelim Exam = (20% × Java Exam 1) + (30% × Java Exam 2) + (20% × JS Exam 1) + (30% × JS Exam 2)
+            = ${(javaExam1Value * 0.2).toFixed(2)}% + ${(javaExam2Value * 0.3).toFixed(2)}% + ${(jsExam1Value * 0.2).toFixed(2)}% + ${(jsExam2Value * 0.3).toFixed(2)}%
+            = ${prelimExam.toFixed(2)}%
 
-    <strong>Prelim Class Standing Calculation:</strong>
-    Prelim Class Standing = (60% × Lab Work) + (40% × Attendance)
-                          = (60% × ${labWork.toFixed(2)}%) + (40% × ${attendancePercentage.toFixed(2)}%)
-                          = ${(labWork * 0.6).toFixed(2)}% + ${(attendancePercentage * 0.4).toFixed(2)}%
-                          = ${prelimClassStanding.toFixed(2)}%
+<strong>Prelim Class Standing Calculation:</strong>
+Prelim Class Standing = (60% × Lab Work) + (40% × Attendance)
+                        = (60% × ${labWork.toFixed(2)}%) + (40% × ${attendancePercentage.toFixed(2)}%)
+                        = ${(labWork * 0.6).toFixed(2)}% + ${(attendancePercentage * 0.4).toFixed(2)}%
+                        = ${prelimClassStanding.toFixed(2)}%
 
-    <strong>Prelim Grade Calculation:</strong>
-    Prelim Grade = (60% × Prelim Exam) + (40% × Prelim Class Standing)
-                 = (60% × ${prelimExam.toFixed(2)}%) + (40% × ${prelimClassStanding.toFixed(2)}%)
-                 = ${(prelimExam * 0.6).toFixed(2)}% + ${(prelimClassStanding * 0.4).toFixed(2)}%
-                 = ${prelimGrade.toFixed(2)}%
-    `;
+<strong>Prelim Grade Calculation:</strong>
+Prelim Grade = (60% × Prelim Exam) + (40% × Prelim Class Standing)
+                = (60% × ${prelimExam.toFixed(2)}%) + (40% × ${prelimClassStanding.toFixed(2)}%)
+                = ${(prelimExam * 0.6).toFixed(2)}% + ${(prelimClassStanding * 0.4).toFixed(2)}%
+                = ${prelimGrade.toFixed(2)}%
+`;
     }
 });

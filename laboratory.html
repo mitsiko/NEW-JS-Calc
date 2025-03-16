@@ -5,70 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laboratory Prelim Grade Calculator</title>
     <link rel="stylesheet" href="styles-lab.css">
-    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:slnt,wght@-14..14,100..1000&family=Numans&display=swap" rel="stylesheet"></head>
 <body>
     <div class="container">
-        <h1>LABORATORY CALCULATOR</h1>
+        <h1>laboratory calculator</h1>
         
         <form id="laboratoryForm">
-            <div class="section">
-                <h2>Attendance</h2>
-                <p>Days Present: (Unchecked dates mean absent)</p>
-                <div class="attendance-checkboxes">
-                    <div class="checkbox-item">
-                        <input type="checkbox" id="date1" name="attendance" value="January 20, 2025" checked>
-                        <label for="date1">January 20, 2025</label>
+            <div class="bento-container">
+                <div id="bento-left-side">
+                    <div class="section" id="top-left">
+                        <h2>Attendance</h2>
+                        <p>Days Present: (Unchecked dates mean absent)</p>
+                        <div class="attendance-checkboxes">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="date1" name="attendance" value="January 20, 2025" checked>
+                                <label for="date1">January 20, 2025</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="date2" name="attendance" value="January 27, 2025" checked>
+                                <label for="date2">January 27, 2025</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="date3" name="attendance" value="February 3, 2025" checked>
+                                <label for="date3">February 3, 2025</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="date4" name="attendance" value="February 10, 2025" checked>
+                                <label for="date4">February 10, 2025</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="date5" name="attendance" value="February 17, 2025" checked>
+                                <label for="date5">February 17, 2025</label>
+                            </div>
+                        </div>
                     </div>
-                    <div class="checkbox-item">
-                        <input type="checkbox" id="date2" name="attendance" value="January 27, 2025" checked>
-                        <label for="date2">January 27, 2025</label>
+                    <div id="down-left">
+                        <h1>研究室電卓I</h1>
                     </div>
-                    <div class="checkbox-item">
-                        <input type="checkbox" id="date3" name="attendance" value="February 3, 2025" checked>
-                        <label for="date3">February 3, 2025</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input type="checkbox" id="date4" name="attendance" value="February 10, 2025" checked>
-                        <label for="date4">February 10, 2025</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input type="checkbox" id="date5" name="attendance" value="February 17, 2025" checked>
-                        <label for="date5">February 17, 2025</label>
+                </div>
+                <div id="bento-right-side">
+                    <div class="section"> 
+                        <h2>Lab Work</h2>
+                        <div class="input-group">
+                            <label for="mp1">Machine Problem 1 (0-100):</label>
+                            <input type="number" id="mp1" name="mp1" min="0" max="100">
+                            <span class="error" id="mp1Error"></span>
+                        </div>
+                        <div class="input-group">
+                            <label for="mp2">Machine Problem 2 (0-100):</label>
+                            <input type="number" id="mp2" name="mp2" min="0" max="100">
+                            <span class="error" id="mp2Error"></span>
+                        </div>
+                        <div class="input-group">
+                            <label for="mp3">Machine Problem 3 (0-100):</label>
+                            <input type="number" id="mp3" name="mp3" min="0" max="100">
+                            <span class="error" id="mp3Error"></span>
+                        </div>
+                        <div class="radio-group">
+                            <label>Documentation:</label>
+                            <div class="radio-item">
+                                <input type="radio" id="docSubmitted" name="documentation" value="100" checked>
+                                <label for="docSubmitted">Submitted</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="docNotSubmitted" name="documentation" value="0">
+                                <label for="docNotSubmitted">Did not Submit</label>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="section">
-                <h2>Lab Work</h2>
-                <div class="input-group">
-                    <label for="mp1">Machine Problem 1 (0-100):</label>
-                    <input type="number" id="mp1" name="mp1" min="0" max="100">
-                    <span class="error" id="mp1Error"></span>
-                </div>
-                <div class="input-group">
-                    <label for="mp2">Machine Problem 2 (0-100):</label>
-                    <input type="number" id="mp2" name="mp2" min="0" max="100">
-                    <span class="error" id="mp2Error"></span>
-                </div>
-                <div class="input-group">
-                    <label for="mp3">Machine Problem 3 (0-100):</label>
-                    <input type="number" id="mp3" name="mp3" min="0" max="100">
-                    <span class="error" id="mp3Error"></span>
-                </div>
-                <div class="radio-group">
-                    <label>Documentation:</label>
-                    <div class="radio-item">
-                        <input type="radio" id="docSubmitted" name="documentation" value="100" checked>
-                        <label for="docSubmitted">Submitted</label>
-                    </div>
-                    <div class="radio-item">
-                        <input type="radio" id="docNotSubmitted" name="documentation" value="0">
-                        <label for="docNotSubmitted">Did not Submit</label>
-                    </div>
-                </div>
-            </div>
-
             <div class="section">
                 <h2>Prelim Exams</h2>
                 <div class="input-group">
@@ -92,18 +98,17 @@
                     <span class="error" id="jsExam2Error"></span>
                 </div>
             </div>
-
             <div class="buttons">
                 <button type="button" id="calculateBtn" class="btn">Calculate</button>
-                <a href="index.html" class="btn">Back to Welcome Screen</a>
+                <a href="index.html" id="back-button" class="btn">Back to Welcome Screen</a>
             </div>
         </form>
 
         <div id="results" class="results-container">
-            <h2>Results</h2>
+            <h1>results</h1>
             <div id="formulaDisplay" class="formula-display"></div>
             <div class="final-grade">
-                <h3>FINAL GRADE: <span id="finalGrade">-</span></h3>
+                <h3>Final Grade: <span id="finalGrade">-</span></h3>
             </div>
         </div>
     </div>

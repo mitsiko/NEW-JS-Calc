@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: url('gradient-final.png');
+    background-image: url('trial.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -27,12 +27,40 @@ body {
     
 }
 
+.bento-container{
+    display:flex;
+    flex-direction: row;
+}
+
+#bento-left-side{
+    display:flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    margin-right: 15px;
+}
+
+#bento-right-side{
+    display:flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+#top-left{
+    flex-basis: 65%;
+}
+#down-left{
+    flex-basis: 35%;
+}
+
 h1 {
-    color: #627e4a;
+    color: #bc5e2e;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: -20px;
+    margin-top: -20px;
+    padding-top: 10px;
     padding-bottom: 10px;
     text-align: left;
+    font-size: 4.5rem;
 }
 
 h2 {
@@ -49,7 +77,7 @@ h2 {
 /* Form Styles */
 .section {
     margin-bottom: 15px;
-    padding: 15px;
+    padding: 25px;
     border-radius: 30px;
     border: 1.5px solid #627e4a;
 }
@@ -123,8 +151,8 @@ input[type="number"] {
 
 .btn {
     display: inline-block;
-    background-color: #ee7225;
-    color: #f1e49b;
+    background-color: #bc5e2e;
+    color: #ffefd2;
     padding: 10px 20px;
     text-decoration: none;
     border: none;
@@ -136,13 +164,13 @@ input[type="number"] {
 }
 
 .btn:hover {
-    background-color: #cb6322;
+    background-color: rgb(157, 82, 35);
 }
 
 #back-button{
     background-color: transparent;
     color: #627e4a;
-    border: 2px solid #627e4a;
+    border: 1.5px solid #627e4a;
 }
 
 /* Results Section */
@@ -151,7 +179,6 @@ input[type="number"] {
     padding: 20px;
     border-radius: 30px;
     display: none;
-    color: #f1e49b;
     width: 800px;
 }
 
@@ -164,8 +191,7 @@ input[type="number"] {
     font-family: monospace;
     white-space: pre-wrap;
     padding: 10px;
-    background-color: #184025;
-    color: #f1e49b;
+    color: #627e4a;
     border-radius: 30px;
     line-height: 1.8;
 }
@@ -174,16 +200,16 @@ input[type="number"] {
     text-align: center;
     margin-top: 20px;
     padding: 15px;
-    background-color: #ee7225;
-    color: #f1e49b;
+    border: 1.5px solid #bc5e2e;
+    color: #bc5e2e;
     border-radius: 30px;
 }
 
 #finalGrade{
-    color:#f1e49b;
+    color:#bc5e2e;
 }
 .final-grade h3 {
-    color: #f1e49b;
+    color: #bc5e2e;
 }
 
 /* Error messages */
@@ -234,8 +260,8 @@ input[type="radio"]{
 
 input[type="checkbox"]:checked,
 input[type="radio"]:checked {
-  background-color: #ee7225;
-  border-color: #ee7225;
+  background-color: #bc5e2e;
+  border-color: #bc5e2e;
 }
 
 input[type="checkbox"]:checked::before {
@@ -245,6 +271,6 @@ input[type="checkbox"]:checked::before {
     align-items: center;
     width: 100%; /* Match the checkbox's width */
     height: 100%; /* Match the checkbox's height */
-    color: #f1e49b; /* Or any color you prefer */
+    color: #ffefd2; /* Or any color you prefer */
     font-size: 1em; /* Adjust the checkmark size */
 }

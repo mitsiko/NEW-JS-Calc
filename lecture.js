@@ -120,30 +120,30 @@ document.addEventListener('DOMContentLoaded', function() {
         prelimQuizzes, prelimExamValue, prelimClassStanding, prelimGrade
     ) {
         return `
-    <strong>Attendance Calculation:</strong>
-    Number of Absences = Total Dates - Checked Dates = ${totalDates} - ${checkedDates} = ${numAbsences}
-    Attendance = 100% - (10% × Number of Absences) = 100% - (10% × ${numAbsences}) = ${attendancePercentage.toFixed(2)}%
+<strong>Attendance Calculation:</strong>
+Number of Absences = Total Dates - Checked Dates = ${totalDates} - ${checkedDates} = ${numAbsences}
+Attendance = 100% - (10% × Number of Absences) = 100% - (10% × ${numAbsences}) = ${attendancePercentage.toFixed(2)}%
 
-    <strong>Prelim Quizzes Calculation:</strong>
-    Essay = ${essayValue}%
-    Quiz 1 = ${quiz1Value}/60 × 100 = ${quiz1Percentage.toFixed(2)}%
-    Quiz 2 = ${quiz2Value}/40 × 100 = ${quiz2Percentage.toFixed(2)}%
-    Quiz 3 = ${quiz3Value}/40 × 100 = ${quiz3Percentage.toFixed(2)}%
-    Prelim Quizzes = (Essay + Quiz 1 + Quiz 2 + Quiz 3) ÷ 4
-                   = (${essayValue}% + ${quiz1Percentage.toFixed(2)}% + ${quiz2Percentage.toFixed(2)}% + ${quiz3Percentage.toFixed(2)}%) ÷ 4
-                   = ${prelimQuizzes.toFixed(2)}%
+<strong>Prelim Quizzes Calculation:</strong>
+Essay = ${essayValue}%
+Quiz 1 = ${quiz1Value}/60 × 100 = ${quiz1Percentage.toFixed(2)}%
+Quiz 2 = ${quiz2Value}/40 × 100 = ${quiz2Percentage.toFixed(2)}%
+Quiz 3 = ${quiz3Value}/40 × 100 = ${quiz3Percentage.toFixed(2)}%
+Prelim Quizzes = (Essay + Quiz 1 + Quiz 2 + Quiz 3) ÷ 4
+                = (${essayValue}% + ${quiz1Percentage.toFixed(2)}% + ${quiz2Percentage.toFixed(2)}% + ${quiz3Percentage.toFixed(2)}%) ÷ 4
+                = ${prelimQuizzes.toFixed(2)}%
 
-    <strong>Prelim Class Standing Calculation:</strong>
-    Prelim Class Standing = (60% × Prelim Quizzes) + (40% × Attendance)
-                          = (60% × ${prelimQuizzes.toFixed(2)}%) + (40% × ${attendancePercentage.toFixed(2)}%)
-                          = ${(prelimQuizzes * 0.6).toFixed(2)}% + ${(attendancePercentage * 0.4).toFixed(2)}%
-                          = ${prelimClassStanding.toFixed(2)}%
+<strong>Prelim Class Standing Calculation:</strong>
+Prelim Class Standing = (60% × Prelim Quizzes) + (40% × Attendance)
+                        = (60% × ${prelimQuizzes.toFixed(2)}%) + (40% × ${attendancePercentage.toFixed(2)}%)
+                        = ${(prelimQuizzes * 0.6).toFixed(2)}% + ${(attendancePercentage * 0.4).toFixed(2)}%
+                        = ${prelimClassStanding.toFixed(2)}%
 
-    <strong>Prelim Grade Calculation:</strong>
-    Prelim Grade = (60% × Prelim Exam) + (40% × Prelim Class Standing)
-                 = (60% × ${prelimExamValue}%) + (40% × ${prelimClassStanding.toFixed(2)}%)
-                 = ${(prelimExamValue * 0.6).toFixed(2)}% + ${(prelimClassStanding * 0.4).toFixed(2)}%
-                 = ${prelimGrade.toFixed(2)}%
+<strong>Prelim Grade Calculation:</strong>
+Prelim Grade = (60% × Prelim Exam) + (40% × Prelim Class Standing)
+                = (60% × ${prelimExamValue}%) + (40% × ${prelimClassStanding.toFixed(2)}%)
+                = ${(prelimExamValue * 0.6).toFixed(2)}% + ${(prelimClassStanding * 0.4).toFixed(2)}%
+                = ${prelimGrade.toFixed(2)}%
     `;
     }
 });
